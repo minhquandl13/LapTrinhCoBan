@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b76f78f-ebf7-41cc-9ab0-f7634042eec8" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="D:\tai lieu\Hoc_ki_1\lap trinh co ban\Exercise\LTCB_Exersice_2\test\src\TestExercise2_6" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="20gRhjomN8sh5sqQ3hhqDUXX7Bu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/test/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Baitap2_2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Baitap2_3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TransactionBankTest.test_Payback">
+    <configuration name="CoffeeTest.test_Cost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LTCB_Exersice_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestExercise2_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestExercise2_4" />
+      <option name="MAIN_CLASS_NAME" value="TestExercise2_4.CoffeeTest" />
+      <option name="METHOD_NAME" value="test_Cost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JetFuelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LTCB_Exersice_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestExercise2_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestExercise2_5" />
+      <option name="MAIN_CLASS_NAME" value="TestExercise2_5.JetFuelTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuadraticTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LTCB_Exersice_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestExercise2_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestExercise2_6" />
+      <option name="MAIN_CLASS_NAME" value="TestExercise2_6.QuadraticTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionBankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LTCB_Exersice_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestExercise2_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestExercise2_7" />
+      <option name="MAIN_CLASS_NAME" value="TestExercise2_7.TransactionBankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionBankTest.test_Payback" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LTCB_Exersice_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestExercise2_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestExercise2_7" />
+      <option name="MAIN_CLASS_NAME" value="TestExercise2_7.TransactionBankTest" />
+      <option name="METHOD_NAME" value="test_Payback" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionBankTest.test_Payback" />
+        <item itemvalue="JUnit.TransactionBankTest" />
+        <item itemvalue="JUnit.QuadraticTest" />
+        <item itemvalue="JUnit.JetFuelTest" />
+        <item itemvalue="JUnit.CoffeeTest.test_Cost" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b76f78f-ebf7-41cc-9ab0-f7634042eec8" name="Changes" comment="" />
+      <created>1636464368386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636464368386</updated>
+      <workItem from="1636733478578" duration="954000" />
+      <workItem from="1636769379559" duration="2135000" />
+      <workItem from="1636773598990" duration="1203000" />
+      <workItem from="1636775137469" duration="4078000" />
+      <workItem from="1636788853377" duration="640000" />
+      <workItem from="1636865624311" duration="648000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LTCB_Exersice_2$QuadraticTest.ic" NAME="QuadraticTest Coverage Results" MODIFIED="1636637502089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TestExercise2_6.*</FILTER>
+    </SUITE>
+  </component>
+</project>
