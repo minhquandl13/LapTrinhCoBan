@@ -41,4 +41,6 @@ public class TestBookstoreEmployee extends TestCase {
         assertTrue(htdch.thisAuthor(felleisen));
         assertFalse(htdch.thisAuthor(friedman));
     }
+
+    public void test_SameGeneration
 }

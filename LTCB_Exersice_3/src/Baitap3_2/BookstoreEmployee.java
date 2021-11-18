@@ -65,7 +65,7 @@ public class BookstoreEmployee {
      * Determines whether two books were written by two authors born less than 10 year apart
      * @return
      */
-    public boolean sameGeneration() {
-        return this.author.same();
+    public boolean sameGeneration(BookstoreEmployee otherBookstoreEmployee) {
+        return this.author.sameGeneration(otherBookstoreEmployee.author);
     }
 }
