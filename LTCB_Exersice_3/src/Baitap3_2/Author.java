@@ -2,9 +2,12 @@ package Baitap3_2;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.time.LocalTime;
+
 public class Author {
     private String name;
     private int birthYear;
+    private LocalTime birthDate;
 
     /**
      *

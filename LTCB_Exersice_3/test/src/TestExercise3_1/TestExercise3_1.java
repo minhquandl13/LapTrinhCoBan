@@ -13,6 +13,10 @@ public class TestExercise3_1 extends TestCase {
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
+
+        assertNotNull(houseA);
+        assertNotNull(houseB);
+        assertNotNull(houseC);
     }
 
     public void test_HasMoreRoom() {
