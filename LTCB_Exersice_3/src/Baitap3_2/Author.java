@@ -35,6 +35,11 @@ public class Author {
                 && (this.birthYear == otherAuthor.birthYear);
     }
 
+    /**
+     *
+     * @param otherAuthor
+     * @return
+     */
     public boolean sameGeneration(@NotNull Author otherAuthor) {
         return Math.abs(this.birthYear - otherAuthor.birthYear) <= 10;
     }
