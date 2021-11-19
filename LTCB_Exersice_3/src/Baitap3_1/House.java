@@ -1,7 +1,5 @@
 package Baitap3_1;
 
-import org.jetbrains.annotations.NotNull;
-
 public class House {
     private String kind;
     private int numberOfRoom;
@@ -31,7 +29,7 @@ public class House {
      * House houseB = new House("Colonial", 9, 450.000, address2)
      * houseA.hasMoreRoom.houseB --> Result : false
      */
-    public boolean hasMoreRoom(@NotNull House other) {
+    public boolean hasMoreRoom(House other) {
         return this.numberOfRoom > other.numberOfRoom;
     }
 
@@ -41,7 +39,7 @@ public class House {
      * Example :
      * Address address1 = new Address(23, "Maple Street", "Brookline")
      * House houseA = new House("Ranch", 7, 375.000, address1)
-     * houseA.inTHisCity("Brookline") --) Result : true
+     * houseA.inTHisCity("Brookline") --> Result : true
      */
     public boolean inThisCity(String city) {
         return this.address.inThisCity(city);
@@ -53,7 +51,7 @@ public class House {
      * Example :
      * Address address1 = new Address(23, "Maple Street", "Brookline")
      * House houseA = new House("Ranch", 7, 375.000, address1)
-     * houseA.sameCity("Brookline") --) Result : true
+     * houseA.sameCity("Brookline") --> Result : true
      */
     public boolean sameCity(String city) {
         return this.address.sameCity(city);

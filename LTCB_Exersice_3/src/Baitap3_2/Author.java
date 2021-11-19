@@ -1,7 +1,5 @@
 package Baitap3_2;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.time.LocalTime;
 
 public class Author {
@@ -10,7 +8,6 @@ public class Author {
     private LocalTime birthDate;
 
     /**
-     *
      * @param name
      * @param birthYear
      */
@@ -20,7 +17,6 @@ public class Author {
     }
 
     /**
-     *
      * @return birthYear >= 1940
      */
     public boolean currentAuthor() {
@@ -28,22 +24,36 @@ public class Author {
     }
 
     /**
-     *
      * @param otherAuthor
      * @return name == otherAuthor name and birthYear == otherAuthor birthYear
-     *
      */
-    public boolean same(@NotNull Author otherAuthor) {
+    public boolean same(Author otherAuthor) {
         return (this.name.equals(otherAuthor.name))
                 && (this.birthYear == otherAuthor.birthYear);
     }
 
     /**
+     * Determines whether two books were written by two authors born less than 10 year apart
      *
      * @param otherAuthor
-     * @return
+     * @return abs(birthYear - otherAuthor birthYear) <= 10
      */
-    public boolean sameGeneration(@NotNull Author otherAuthor) {
+    public boolean sameGeneration(Author otherAuthor) {
         return Math.abs(this.birthYear - otherAuthor.birthYear) <= 10;
+    }
+
+    /**
+     *
+     * @param object
+     * @return name = otherAuthor name and birthYear = otherAuthor birthYear
+     */
+    public boolean equals(Object object) {
+        if (!(object instanceof Author otherAuthor)) {
+            return false;
+        }
+        else {
+            return (this.name.equals(otherAuthor.name))
+                    && (this.birthYear == otherAuthor.birthYear);
+        }
     }
 }

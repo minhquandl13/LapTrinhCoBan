@@ -62,6 +62,19 @@ public class BookstoreEmployee {
     }
 
     /**
+     * Determines whether one book was written by the same author as some other book
+     * @return author same to otherBookstoreEmployee author
+     * Example :
+     * Author doraemonAuthor = new Author("Doraemon Author", 1960);
+     * BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor)
+     * BookstoreEmployee doraemonBook2 = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor)
+     * doraemonBook.sameAuthor(doraemonBook2) --> Result : true
+     */
+    public boolean sameAuthor(BookstoreEmployee otherBookstoreEmployee) {
+        return this.author.same(otherBookstoreEmployee.author);
+    }
+
+    /**
      * Determines whether two books were written by two authors born less than 10 year apart
      * @return author sameGeneration otherBookstoreEmployee author
      * Example :
@@ -75,5 +88,19 @@ public class BookstoreEmployee {
         return this.author.sameGeneration(otherBookstoreEmployee.author);
     }
 
+    /**
+     * Use method equals
+     * @return author = otherAuthor
+     */
+    public boolean thisAuthor2(Author otherAuthor) {
+        return this.author.equals(otherAuthor);
+    }
 
+    /**
+     * Use method equals
+     * @return author = otherBookstoreEmployee author
+     */
+    public boolean sameAuthor2(BookstoreEmployee otherBookstoreEmployee) {
+        return this.author.equals(otherBookstoreEmployee.author);
+    }
 }

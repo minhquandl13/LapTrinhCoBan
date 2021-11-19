@@ -4,7 +4,7 @@ import Baitap3_1.Address;
 import Baitap3_1.House;
 import junit.framework.TestCase;
 
-public class TestExercise3_1 extends TestCase {
+public class TestHouse extends TestCase {
 
     public void test_House() {
         Address address1 = new Address(23, "Maple Street", "Brookline");
