@@ -14,7 +14,7 @@ public class Route {
         this.destination = destination;
     }
 
-    public boolean isDestination(String otherDestination) {
-        return true;
+    public boolean isSameDestination(Route otherRoute) {
+        return this.destination.equals(otherRoute.destination);
     }
 }
