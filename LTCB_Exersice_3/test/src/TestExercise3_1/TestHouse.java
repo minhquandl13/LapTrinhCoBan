@@ -6,10 +6,10 @@ import junit.framework.TestCase;
 
 public class TestHouse extends TestCase {
 
+    private Address address1 = new Address(23, "Maple Street", "Brookline");
+    private Address address2 = new Address(5, "Joye Road", "Newton");
+    private Address address3 = new Address(83, "Winslow Road", "Waltham");
     public void test_House() {
-        Address address1 = new Address(23, "Maple Street", "Brookline");
-        Address address2 = new Address(5, "Joye Road", "Newton");
-        Address address3 = new Address(83, "Winslow Road", "Waltham");
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
@@ -20,9 +20,6 @@ public class TestHouse extends TestCase {
     }
 
     public void test_HasMoreRoom() {
-        Address address1 = new Address(23, "Maple Street", "Brookline");
-        Address address2 = new Address(5, "Joye Road", "Newton");
-        Address address3 = new Address(83, "Winslow Road", "Waltham");
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
@@ -32,9 +29,6 @@ public class TestHouse extends TestCase {
     }
 
     public void test_InThatHouse() {
-        Address address1 = new Address(23, "Maple Street", "Brookline");
-        Address address2 = new Address(5, "Joye Road", "Newton");
-        Address address3 = new Address(83, "Winslow Road", "Waltham");
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
@@ -44,9 +38,6 @@ public class TestHouse extends TestCase {
     }
 
     public void test_SameCity() {
-        Address address1 = new Address(23, "Maple Street", "Brookline");
-        Address address2 = new Address(5, "Joye Road", "Newton");
-        Address address3 = new Address(83, "Winslow Road", "Waltham");
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);

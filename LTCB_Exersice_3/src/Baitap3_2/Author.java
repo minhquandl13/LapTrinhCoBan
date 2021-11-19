@@ -17,7 +17,11 @@ public class Author {
     }
 
     /**
+     *
      * @return birthYear >= 1940
+     * Example :
+     * Author doraemonAuthor = new Author("Doraemon Author", 1960)
+     * doraemonAuthor.currentAuthor() --> Result : true
      */
     public boolean currentAuthor() {
         return this.birthYear >= 1940;
@@ -26,6 +30,10 @@ public class Author {
     /**
      * @param otherAuthor
      * @return name == otherAuthor name and birthYear == otherAuthor birthYear
+     * Example :
+     * Author doraemonAuthor = new Author("Doraemon Author", 1960)
+     * Author dragonballAuthor = new Author("Dragonball Author", 1939)
+     * doraemonAuthor.same(dragonballAuthor) --> Result : false
      */
     public boolean same(Author otherAuthor) {
         return (this.name.equals(otherAuthor.name))
@@ -37,21 +45,27 @@ public class Author {
      *
      * @param otherAuthor
      * @return abs(birthYear - otherAuthor birthYear) <= 10
+     * Example :
+     * Author doraemonAuthor = new Author("Doraemon Author", 1960)
+     * Author dragonballAuthor = new Author("Dragonball Author", 1939)
+     * doraemonAuthor.sameGeneration(dragonballAuthor) --> Result : false
      */
     public boolean sameGeneration(Author otherAuthor) {
         return Math.abs(this.birthYear - otherAuthor.birthYear) <= 10;
     }
 
     /**
-     *
      * @param object
      * @return name = otherAuthor name and birthYear = otherAuthor birthYear
+     * Example :
+     * Author doraemonAuthor = new Author("Doraemon Author", 1960)
+     * Author dragonballAuthor = new Author("Dragonball Author", 1939)
+     * ddoraemonAuthor.equals(dragonballAuthor) --> Result : false
      */
     public boolean equals(Object object) {
         if (!(object instanceof Author otherAuthor)) {
             return false;
-        }
-        else {
+        } else {
             return (this.name.equals(otherAuthor.name))
                     && (this.birthYear == otherAuthor.birthYear);
         }

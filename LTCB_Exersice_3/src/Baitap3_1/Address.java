@@ -20,7 +20,10 @@ public class Address {
     /**
      *
      * @param otherCity
-     * @return city
+     * @return city = other city
+     * Example :
+     * Address address1 = new Address(23, "Maple Street", "Brookline")
+     * address1.inThisCity("Brookline") --> Result : true
      */
     public boolean inThisCity(String otherCity) {
         return this.city.equals(otherCity);
@@ -29,7 +32,10 @@ public class Address {
     /**
      *
      * @param otherCity
-     * @return city
+     * @return city = other city
+     * Example :
+     * Address address1 = new Address(23, "Maple Street", "Brookline")
+     * address1.sameCity("Brookline") --> Result : true
      */
     public boolean sameCity(String otherCity) {
         return this.city.equals(otherCity);

@@ -4,7 +4,7 @@ import Baitap3_2.Author;
 import Baitap3_2.BookstoreEmployee;
 import junit.framework.TestCase;
 
-public class TestBook extends TestCase {
+public class TestBookstoreEmployee extends TestCase {
 
     private Author doraemonAuthor = new Author("Doraemon Author", 1960);
     private Author dragonballAuthor = new Author("Dragonball Author", 1939);

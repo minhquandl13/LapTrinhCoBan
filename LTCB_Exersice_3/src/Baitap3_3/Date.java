@@ -17,6 +17,4 @@ public class Date {
         this.month = month;
         this.year = year;
     }
-
-
 }
