@@ -94,10 +94,5 @@ public class TestTrain extends TestCase {
 
         assertEquals(7, e.getHour());
         assertEquals(55, e.getMinute());
-//        System.out.println("Time of Train A taking: " + a.getHour() + ":" + a.getMinute());
-//        System.out.println("Time of Train B taking: " + b.getHour() + ":" + b.getMinute());
-//        System.out.println("Time of Train C taking: " + c.getHour() + ":" + c.getMinute());
-//        System.out.println("Time of Train D taking: " + d.getHour() + ":" + d.getMinute());
-//        System.out.println("Time of Train E taking: " + e.getHour() + ":" + e.getMinute());
     }
 }

@@ -31,7 +31,7 @@ public class Train {
     }
 
     public boolean isTimeTrainDeparture(Train otherTrain) {
-        return this.schedule.isTimeTrainDeparture(otherTrain.schedule);
+        return this.schedule.isSameTrainDepartureTime(otherTrain.schedule);
     }
 
     public ClockTime getTripTime() {

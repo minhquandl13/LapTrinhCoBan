@@ -17,7 +17,7 @@ public class Schedule {
         this.arriveTime = clockTimeArrive;
     }
 
-    public boolean isTimeTrainDeparture(Schedule otherSchedule) {
+    public boolean isSameTrainDepartureTime(Schedule otherSchedule) {
         return this.departureTime.equals(otherSchedule.departureTime);
     }
 
