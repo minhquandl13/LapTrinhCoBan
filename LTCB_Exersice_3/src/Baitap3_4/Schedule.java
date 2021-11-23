@@ -46,7 +46,7 @@ public class Schedule {
         Duration duration = Duration.between(arriveLocalTime, departureLocalTime);
         long totalMinutes = Math.abs(duration.toMinutes()); // toHours() chỉ lấy phần chẵn của giờ
 
-        int tripHour = (int) totalMinutes / 60; // chia lấy giờ chẵn
+        int tripHour = (int) totalMinutes / 60; // chia lấy pnần giờ chẵn
         int tripMinute = (int) totalMinutes % 60; // chia lấy phần dư còn lại của giờ
 
         ClockTime tripTime = new ClockTime(tripHour, tripMinute);
