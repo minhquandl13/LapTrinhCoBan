@@ -37,7 +37,7 @@ public class TestAuthor extends TestCase {
         assertTrue(doraemonAuthor.sameGeneration(doraemonAuthor));
     }
 
-    public void equals() {
+    public void test_equals() {
         Author doraemonAuthor = new Author("Doraemon Author", 1960);
         Author dragonballAuthor = new Author("Dragonball Author", 1939);
 
