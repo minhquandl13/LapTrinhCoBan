@@ -66,7 +66,7 @@ public class TestBookstoreEmployee extends TestCase {
         BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
         BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
 
-        assertFalse(doraemonBook.equals(dragonballBook));
+        assertFalse(doraemonBook.thisAuthor2(dragonballAuthor));
     }
 
     public void test_SameAuthor2() {
@@ -74,6 +74,6 @@ public class TestBookstoreEmployee extends TestCase {
         BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
         BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
 
-        assertFalse(doraemonBook.equals(dragonballBook));
+        assertFalse(doraemonBook.sameAuthor2(dragonballBook));
     }
 }
