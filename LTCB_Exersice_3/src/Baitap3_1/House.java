@@ -54,7 +54,7 @@ public class House {
      * houseA.sameCity("Brookline") --> Result : true
      */
     public boolean sameCity(House othercity) {
-        return this.address.sameCity(othercity);
+        return this.address.sameCity(othercity.address);
     }
 }
 
