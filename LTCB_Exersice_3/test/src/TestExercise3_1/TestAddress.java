@@ -25,7 +25,7 @@ public class TestAddress extends TestCase {
         Address address1 = new Address(23, "Maple Street", "Brookline");
         Address address2 = new Address(5, "Joye Road", "Newton");
 
-        assertTrue(address2.sameCity("Newton"));
-        assertFalse(address1.sameCity("Newton"));
+        assertTrue(address2.sameCity(address2));
+        assertFalse(address1.sameCity(address2));
     }
 }

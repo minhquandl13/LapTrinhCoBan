@@ -28,7 +28,7 @@ public class TestHouse extends TestCase {
         assertTrue(houseB.hasMoreRoom(houseC));
     }
 
-    public void test_InThatHouse() {
+    public void test_InThisCity() {
         House houseA = new House("Ranch", 7, 375.000, address1);
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
@@ -42,7 +42,7 @@ public class TestHouse extends TestCase {
         House houseB = new House("Colonial", 9, 450.000, address2);
         House houseC = new House("Cape", 6, 235.000, address3);
 
-        assertTrue(houseA.sameCity("Brookline"));
-        assertFalse(houseB.sameCity("Ho Chi Minh"));
+        assertTrue(houseA.sameCity(houseA));
+        assertFalse(houseB.sameCity(houseC));
     }
 }

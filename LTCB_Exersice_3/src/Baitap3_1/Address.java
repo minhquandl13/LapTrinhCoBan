@@ -37,7 +37,7 @@ public class Address {
      * Address address1 = new Address(23, "Maple Street", "Brookline")
      * address1.sameCity("Brookline") --> Result : true
      */
-    public boolean sameCity(String otherCity) {
+    public boolean sameCity(Address otherCity) {
         return this.city.equals(otherCity);
     }
 }

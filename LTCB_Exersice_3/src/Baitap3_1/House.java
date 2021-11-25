@@ -53,8 +53,8 @@ public class House {
      * House houseA = new House("Ranch", 7, 375.000, address1)
      * houseA.sameCity("Brookline") --> Result : true
      */
-    public boolean sameCity(String city) {
-        return this.address.sameCity(city);
+    public boolean sameCity(House othercity) {
+        return this.address.sameCity(othercity);
     }
 }
 
