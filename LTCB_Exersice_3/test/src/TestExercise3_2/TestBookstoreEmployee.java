@@ -31,9 +31,9 @@ public class TestBookstoreEmployee {
         dragonballAuthor = new Author("Dragonball Author", 1939, authorDragonball);
         yaibaAuthor = new Author("Yaiba Author", 1970, authorYaiba);
 
-        doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
-        dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-        yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
+        doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, doraemonAuthor);
+        dragonballBook = new BookstoreEmployee("Dragonball", 25.9, 1998, dragonballAuthor);
+        yaibaBook = new BookstoreEmployee("Yaiba", 10.0, 2000, yaibaAuthor);
 
     }
 
@@ -69,7 +69,7 @@ public class TestBookstoreEmployee {
 
     @Test
     public void test_SameAuthor() {
-        BookstoreEmployee doraemonBook2 = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
+        BookstoreEmployee doraemonBook2 = new BookstoreEmployee("Doraemon Thêm", 0.0, 2004, doraemonAuthor);
 
         assertFalse(doraemonBook.sameAuthor(dragonballBook));
         assertTrue(doraemonBook.sameAuthor(doraemonBook2));
