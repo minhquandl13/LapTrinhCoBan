@@ -1,14 +1,19 @@
 package TestExercise3_2;
 
 import Baitap3_2.Author;
+import Baitap3_2.BirthDate;
 import Baitap3_2.BookstoreEmployee;
 import junit.framework.TestCase;
 
 public class TestBookstoreEmployee extends TestCase {
+    private BirthDate authorDoraemon = new BirthDate(1, 3, 1970);
+    private BirthDate authorDragonball = new BirthDate(3, 6, 1975);
+    private BirthDate authorYaiba = new BirthDate(1, 3, 2003);
 
-    private Author doraemonAuthor = new Author("Doraemon Author", 1960);
-    private Author dragonballAuthor = new Author("Dragonball Author", 1939);
-    private Author yaibaAuthor = new Author("Yaiba Author", 1970);
+
+    private Author doraemonAuthor = new Author("Doraemon Author", 1960, authorDoraemon);
+    private Author dragonballAuthor = new Author("Dragonball Author", 1939, authorDragonball);
+    private Author yaibaAuthor = new Author("Yaiba Author", 1970, authorYaiba);
 
     public void test_BookstoreEmployee() {
         BookstoreEmployee doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, doraemonAuthor);

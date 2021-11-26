@@ -5,15 +5,18 @@ import java.time.LocalTime;
 public class Author {
     private String name;
     private int birthYear;
-    private LocalTime birthDate;
+    private BirthDate date;
 
     /**
+     *
      * @param name
      * @param birthYear
+     * @param date
      */
-    public Author(String name, int birthYear) {
+    public Author(String name, int birthYear, BirthDate date) {
         this.name = name;
         this.birthYear = birthYear;
+        this.date = date;
     }
 
     /**
@@ -67,7 +70,9 @@ public class Author {
             return false;
         } else {
             return (this.name.equals(otherAuthor.name))
-                    && (this.birthYear == otherAuthor.birthYear);
+                    && (this.date.getDay() == otherAuthor.date.getDay())
+                    && (this.date.getMonth() == otherAuthor.date.getMonth())
+                    && (this.date.getYear() == otherAuthor.date.getYear() );
         }
     }
 }
