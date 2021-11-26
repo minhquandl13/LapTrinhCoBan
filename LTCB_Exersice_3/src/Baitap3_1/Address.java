@@ -38,6 +38,6 @@ public class Address {
      * address1.sameCity("Brookline") --> Result : true
      */
     public boolean sameCity(Address otherCity) {
-        return this.city.equals(otherCity);
+        return this.city.equals(otherCity.city);
     }
 }
