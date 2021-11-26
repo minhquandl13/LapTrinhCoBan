@@ -47,6 +47,7 @@ public class TestHouse {
         assertFalse(houseA.inThisCity("Newton"));
     }
 
+    @Test
     public void test_SameCity() {
         assertTrue(houseA.sameCity(houseA));
         assertFalse(houseB.sameCity(houseC));
