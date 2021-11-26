@@ -21,7 +21,6 @@ public class TestBookstoreEmployee {
     private BookstoreEmployee dragonballBook;
     private BookstoreEmployee yaibaBook;
 
-
     @Before
     public void setUpTestcase() {
         authorDoraemon = new BirthDate(1, 3, 1970);
