@@ -69,7 +69,6 @@ public class TestBookstoreEmployee extends TestCase {
     public void test_ThisAuthor2() {
         BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
         BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-        BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
 
         assertFalse(doraemonBook.thisAuthor2(dragonballAuthor));
     }
@@ -77,7 +76,6 @@ public class TestBookstoreEmployee extends TestCase {
     public void test_SameAuthor2() {
         BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
         BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-        BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
 
         assertFalse(doraemonBook.sameAuthor2(dragonballBook));
     }
