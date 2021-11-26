@@ -1,10 +1,14 @@
 package TestExercise3_3;
 
 import Baitap3_3.Date;
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class TestDate extends TestCase {
+import static org.junit.Assert.*;
 
+
+public class TestDate  {
+
+    @Test
     public void test_Date() {
         Date date1 = new Date(11, 11, 2011);
         Date date2 = new Date(6, 13, 2019);

@@ -16,7 +16,7 @@ public class BirthDate {
         this.month = month;
         this.year = year;
     }
-    
+
     public int getDay() {
         return day;
     }

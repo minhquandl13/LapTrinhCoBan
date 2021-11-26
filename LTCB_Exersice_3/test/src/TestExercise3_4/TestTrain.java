@@ -4,34 +4,67 @@ import Baitap3_4.ClockTime;
 import Baitap3_4.Route;
 import Baitap3_4.Schedule;
 import Baitap3_4.Train;
-import junit.framework.TestCase;
 
-public class TestTrain extends TestCase {
-    private ClockTime clockTime1 = new ClockTime(3, 31);
-    private ClockTime clockTime2 = new ClockTime(11, 30);
-    private ClockTime clockTime3 = new ClockTime(12, 30);
-    private ClockTime clockTime4 = new ClockTime(19, 25);
-    private ClockTime clockTime5 = new ClockTime(11, 30);
+import static org.junit.Assert.*;
 
-    private Schedule schedule1 = new Schedule(clockTime1, clockTime3);
-    private Schedule schedule2 = new Schedule(clockTime3, clockTime4);
-    private Schedule schedule3 = new Schedule(clockTime4, clockTime2);
-    private Schedule schedule4 = new Schedule(clockTime3, clockTime5);
-    private Schedule schedule5 = new Schedule(clockTime4, clockTime5);
+import org.junit.Before;
+import org.junit.Test;
 
-    private Route route1 = new Route("Ha Noi", "Sai Gon");
-    private Route route2 = new Route("HSai Gon", "Da Lat");
-    private Route route3 = new Route("Ha Noi", "Da Nang");
-    private Route route4 = new Route("Sai Gon", "Da Nang");
-    private Route route5 = new Route("Ha Noi", "Da Lat");
+public class TestTrain {
+    private ClockTime clockTime1;
+    private ClockTime clockTime2;
+    private ClockTime clockTime3;
+    private ClockTime clockTime4;
+    private ClockTime clockTime5;
 
+    private Schedule schedule1;
+    private Schedule schedule2;
+    private Schedule schedule3;
+    private Schedule schedule4;
+    private Schedule schedule5;
+
+    private Route route1;
+    private Route route2;
+    private Route route3;
+    private Route route4;
+    private Route route5;
+
+    private Train trainA;
+    private Train trainB;
+    private Train trainC;
+    private Train trainD;
+    private Train trainE;
+
+    @Before
+    public void setUp() {
+        clockTime1 = new ClockTime(3, 31);
+        clockTime2 = new ClockTime(11, 30);
+        clockTime3 = new ClockTime(12, 30);
+        clockTime4 = new ClockTime(19, 25);
+        clockTime5 = new ClockTime(11, 30);
+
+        schedule1 = new Schedule(clockTime1, clockTime3);
+        schedule2 = new Schedule(clockTime3, clockTime4);
+        schedule3 = new Schedule(clockTime4, clockTime2);
+        schedule4 = new Schedule(clockTime3, clockTime5);
+        schedule5 = new Schedule(clockTime4, clockTime5);
+
+        route1 = new Route("Ha Noi", "Sai Gon");
+        route2 = new Route("HSai Gon", "Da Lat");
+        route3 = new Route("Ha Noi", "Da Nang");
+        route4 = new Route("Sai Gon", "Da Nang");
+        route5 = new Route("Ha Noi", "Da Lat");
+
+
+        trainA = new Train(schedule1, route1, true);
+        trainB = new Train(schedule2, route2, false);
+        trainC = new Train(schedule3, route3, false);
+        trainD = new Train(schedule4, route4, true);
+        trainE = new Train(schedule5, route5, true);
+    }
+
+    @Test
     public void test_Train() {
-        Train trainA = new Train(schedule1, route1, true);
-        Train trainB = new Train(schedule2, route2, false);
-        Train trainC = new Train(schedule3, route3, false);
-        Train trainD = new Train(schedule4, route4, true);
-        Train trainE = new Train(schedule5, route5, true);
-
         assertNotNull(trainA);
         assertNotNull(trainB);
         assertNotNull(trainC);
@@ -39,13 +72,8 @@ public class TestTrain extends TestCase {
         assertNotNull(trainE);
     }
 
+    @Test
     public void test_IsDestination() {
-        Train trainA = new Train(schedule1, route1, true);
-        Train trainB = new Train(schedule2, route2, false);
-        Train trainC = new Train(schedule3, route3, false);
-        Train trainD = new Train(schedule4, route4, true);
-        Train trainE = new Train(schedule5, route5, true);
-
         assertFalse(trainA.isSameDestination(trainB));
         assertTrue(trainB.isSameDestination(trainE));
         assertTrue(trainC.isSameDestination(trainD));
@@ -53,13 +81,8 @@ public class TestTrain extends TestCase {
         assertFalse(trainC.isSameDestination(trainA));
     }
 
+    @Test
     public void test_IsTimeTrainDeparture() {
-        Train trainA = new Train(schedule1, route1, true);
-        Train trainB = new Train(schedule2, route2, false);
-        Train trainC = new Train(schedule3, route3, false);
-        Train trainD = new Train(schedule4, route4, true);
-        Train trainE = new Train(schedule5, route5, true);
-
         assertTrue(trainC.isTimeTrainDeparture(trainE));
         assertFalse(trainA.isTimeTrainDeparture(trainC));
         assertTrue(trainD.isTimeTrainDeparture(trainB));
@@ -67,13 +90,8 @@ public class TestTrain extends TestCase {
         assertFalse(trainE.isTimeTrainDeparture(trainA));
     }
 
+    @Test
     public void test_GetTripTime() {
-        Train trainA = new Train(schedule1, route1, true);
-        Train trainB = new Train(schedule2, route2, false);
-        Train trainC = new Train(schedule3, route3, false);
-        Train trainD = new Train(schedule4, route4, true);
-        Train trainE = new Train(schedule5, route5, true);
-
         ClockTime a = trainA.getTripTime();
         ClockTime b = trainB.getTripTime();
         ClockTime c = trainC.getTripTime();

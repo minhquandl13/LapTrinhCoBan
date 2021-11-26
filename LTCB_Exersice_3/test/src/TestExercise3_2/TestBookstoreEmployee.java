@@ -3,80 +3,87 @@ package TestExercise3_2;
 import Baitap3_2.Author;
 import Baitap3_2.BirthDate;
 import Baitap3_2.BookstoreEmployee;
-import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class TestBookstoreEmployee extends TestCase {
-    private BirthDate authorDoraemon = new BirthDate(1, 3, 1970);
-    private BirthDate authorDragonball = new BirthDate(3, 6, 1975);
-    private BirthDate authorYaiba = new BirthDate(1, 3, 2003);
+public class TestBookstoreEmployee {
+    private BirthDate authorDoraemon;
+    private BirthDate authorDragonball;
+    private BirthDate authorYaiba;
 
 
-    private Author doraemonAuthor = new Author("Doraemon Author", 1960, authorDoraemon);
-    private Author dragonballAuthor = new Author("Dragonball Author", 1939, authorDragonball);
-    private Author yaibaAuthor = new Author("Yaiba Author", 1970, authorYaiba);
+    private Author doraemonAuthor;
+    private Author dragonballAuthor;
+    private Author yaibaAuthor;
 
+    private BookstoreEmployee doraemonBook;
+    private BookstoreEmployee dragonballBook;
+    private BookstoreEmployee yaibaBook;
+
+
+    @Before
+    public void setUpTestcase() {
+        authorDoraemon = new BirthDate(1, 3, 1970);
+        authorDragonball = new BirthDate(3, 6, 1975);
+        authorYaiba = new BirthDate(1, 3, 2003);
+
+        doraemonAuthor = new Author("Doraemon Author", 1960, authorDoraemon);
+        dragonballAuthor = new Author("Dragonball Author", 1939, authorDragonball);
+        yaibaAuthor = new Author("Yaiba Author", 1970, authorYaiba);
+
+        doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
+        dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
+        yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
+
+    }
+
+    @Test
     public void test_BookstoreEmployee() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, doraemonAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("Dragonball", 25.9, 1998, dragonballAuthor);
-
         assertNotNull(doraemonBook);
         assertNotNull(dragonballBook);
     }
 
+    @Test
     public void test_CurrentBook() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, dragonballAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("Dragonball", 25.9, 1998, dragonballAuthor);
-
         assertTrue(doraemonBook.currentBook());
         assertFalse(dragonballBook.currentBook());
     }
 
+    @Test
     public void test_CurrentAuthor() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, dragonballAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("Dragonball", 25.9, 1998, dragonballAuthor);
-
         assertTrue(doraemonBook.currentAuthor());
         assertFalse(dragonballBook.currentAuthor());
     }
 
+    @Test
     public void test_ThisAuthor() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("Doraemon", 0.0, 2004, dragonballAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("Dragonball", 25.9, 1998, dragonballAuthor);
-
         assertTrue(doraemonBook.thisAuthor(doraemonAuthor));
-        assertFalse(dragonballBook.thisAuthor(dragonballAuthor));
+        assertFalse(dragonballBook.thisAuthor(doraemonAuthor));
     }
 
+    @Test
     public void test_SameGeneration() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-        BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
-
         assertFalse(doraemonBook.sameGeneration(dragonballBook));
         assertTrue(doraemonBook.sameGeneration(yaibaBook));
     }
 
+    @Test
     public void test_SameAuthor() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-        BookstoreEmployee yaibaBook = new BookstoreEmployee("qwert", 10.0, 2000, yaibaAuthor);
         BookstoreEmployee doraemonBook2 = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
 
         assertFalse(doraemonBook.sameAuthor(dragonballBook));
         assertTrue(doraemonBook.sameAuthor(doraemonBook2));
     }
 
+    @Test
     public void test_ThisAuthor2() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
 
         assertFalse(doraemonBook.thisAuthor2(dragonballAuthor));
     }
 
+    @Test
     public void test_SameAuthor2() {
-        BookstoreEmployee doraemonBook = new BookstoreEmployee("How to Design Class Hierarchies", 0.0, 2004, doraemonAuthor);
-        BookstoreEmployee dragonballBook = new BookstoreEmployee("A Little Java, A Few Pattern", 25.9, 1998, dragonballAuthor);
-
         assertFalse(doraemonBook.sameAuthor2(dragonballBook));
     }
 }

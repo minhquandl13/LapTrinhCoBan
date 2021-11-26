@@ -1,10 +1,13 @@
 package TestExercise3_3;
 
 import Baitap3_3.TemperatureRange;
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class TestTemperatureRange extends TestCase {
+import static org.junit.Assert.*;
 
+public class TestTemperatureRange {
+
+    @Test
     public void test_TemperatureRange() {
         TemperatureRange temperatureRange1 = new TemperatureRange(1, 100);
         TemperatureRange temperatureRange2 = new TemperatureRange(-1, 50);
@@ -15,6 +18,7 @@ public class TestTemperatureRange extends TestCase {
         assertNotNull(temperatureRange3);
     }
 
+    @Test
     public void test_Within() {
         TemperatureRange temperatureRange1 = new TemperatureRange(1, 100);
         TemperatureRange temperatureRange2 = new TemperatureRange(-1, 50);
