@@ -1,6 +1,7 @@
 package TestExercise3_2;
 
 import Baitap3_2.Author;
+
 import Baitap3_2.BirthDate;
 import org.junit.Before;
 import org.junit.Test;
