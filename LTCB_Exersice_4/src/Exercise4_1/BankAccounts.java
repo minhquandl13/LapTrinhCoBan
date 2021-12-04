@@ -3,14 +3,12 @@ package Exercise4_1;
 public class BankAccounts {
     private String customerName;
     private int idNumber;
-    private double totalMoney;
-    private Account account;
+    private double currentBalance;
 
 
-    public BankAccounts(String customerName, int idNumber ,double totalMoney, Account account) {
+    public BankAccounts(String customerName, int idNumber ,double currentBalance) {
         this.idNumber = idNumber;
         this.customerName = customerName;
-        this.account = account;
-        this.totalMoney = totalMoney;
+        this.currentBalance = currentBalance;
     }
 }
