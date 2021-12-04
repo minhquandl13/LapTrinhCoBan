@@ -1,3 +1,5 @@
+package TestEercise4_1;
+
 import Exercise4_1.*;
 import org.junit.Test;
 
@@ -13,7 +15,8 @@ public class BankAccountsTest {
         BankAccounts earl_gray = new CheckingAccount("Earl Gray", 1782, 1_250, 500);
         BankAccounts annie_proulx = new SavingsAccount("Annie Proulx", 2992, 800, 3.5);
         BankAccounts ima_flatt = new CertificateOfDeposit("Ima Flatt", 4104, 10_123,
-                LocalDate.of(2005, Month.JUNE, 1), 4);
+                                                            LocalDate.of(2005, Month.JUNE, 1), 4);
+
 
         assertNotNull(earl_gray);
         assertNotNull(annie_proulx);
