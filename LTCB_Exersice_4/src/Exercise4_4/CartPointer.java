@@ -9,13 +9,21 @@ public class CartPointer {
         this.y = y;
     }
 
+    public double distanceToO() {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+    }
+
     public void translate(int dx, int dy) {
 
     }
 
     public double distanceTo(CartPointer point) {
-        return 1;
+        double diffX = this.x - point.x;
+        double diffY = this.y - point.y;
+
+        return Math.sqrt(diffX * diffX + diffY * diffY);
     }
+
     public int getX() {
         return x;
     }
