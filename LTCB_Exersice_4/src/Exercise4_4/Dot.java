@@ -19,6 +19,6 @@ public class Dot extends Shape {
 
     @Override
     public Square boudingBox() {
-        return null;
+        return new Square(this.cartPointerLocation, 0);
     }
 }

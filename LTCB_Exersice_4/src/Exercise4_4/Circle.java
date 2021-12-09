@@ -24,6 +24,7 @@ public class Circle extends Shape {
 
     @Override
     public Square boudingBox() {
-        return null;
+        return new Square(this.cartPointerLocation.translate(
+                - this.radius, - this.radius), this.radius * 2);
     }
 }

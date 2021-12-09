@@ -13,8 +13,8 @@ public class CartPointer {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
-    public void translate(int dx, int dy) {
-
+    public CartPointer translate(int dx, int dy) {
+        return new CartPointer(this.x + dx, this.y + dy);
     }
 
     public double distanceTo(CartPointer point) {

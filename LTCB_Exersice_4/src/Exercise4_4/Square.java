@@ -3,7 +3,8 @@ package Exercise4_4;
 public class Square extends Shape{
     public int size;
 
-    public Square(int size) {
+    public Square(CartPointer cartPointerLocation, int size) {
+        super();
         this.size = size;
     }
 
@@ -24,6 +25,6 @@ public class Square extends Shape{
 
     @Override
     public Square boudingBox() {
-        return null;
+        return new Square(this.cartPointerLocation, this.size);
     }
 }
