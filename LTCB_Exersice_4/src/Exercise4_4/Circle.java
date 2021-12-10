@@ -13,7 +13,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    public double disstanceToO() {
+    public double distanceToO() {
         return this.cartPointerLocation.distanceToO();
     }
 
@@ -23,8 +23,18 @@ public class Circle extends Shape {
     }
 
     @Override
-    public Square boudingBox() {
+    public Square boundingBox() {
         return new Square(this.cartPointerLocation.translate(
                 - this.radius, - this.radius), this.radius * 2);
+    }
+
+    @Override
+    public Rectangle boundingBox1() {
+        return null;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * Math.PI * this.radius;
     }
 }

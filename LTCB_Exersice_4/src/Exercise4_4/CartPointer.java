@@ -1,8 +1,8 @@
 package Exercise4_4;
 
 public class CartPointer {
-    public int x;
-    public int y;
+    private int x;
+    private int y;
 
     public CartPointer(int x, int y) {
         this.x = x;

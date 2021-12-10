@@ -6,7 +6,9 @@ public interface IShape {
 
     boolean contains(CartPointer point);
 
-    double disstanceToO();
+    double distanceToO();
 
-    Square boudingBox();
+    Square boundingBox();
+
+    double perimeter();
 }

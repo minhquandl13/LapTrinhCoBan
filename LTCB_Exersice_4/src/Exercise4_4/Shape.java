@@ -15,5 +15,11 @@ public abstract class Shape implements IShape {
         return 0;
     }
 
-    public abstract Square boudingBox();
+    public abstract Square boundingBox();
+
+    public abstract Rectangle boundingBox1();
+
+    public double perimeter() {
+        return 0;
+    }
 }

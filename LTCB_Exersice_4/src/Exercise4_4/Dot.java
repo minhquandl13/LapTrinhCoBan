@@ -8,7 +8,7 @@ public class Dot extends Shape {
     }
 
     @Override
-    public double disstanceToO() {
+    public double distanceToO() {
         return this.cartPointerLocation.distanceToO();
     }
 
@@ -18,7 +18,17 @@ public class Dot extends Shape {
     }
 
     @Override
-    public Square boudingBox() {
+    public Square boundingBox() {
         return new Square(this.cartPointerLocation, 0);
+    }
+
+    @Override
+    public Rectangle boundingBox1() {
+        return new Rectangle(this.cartPointerLocation, 0, 0);
+    }
+
+    @Override
+    public double perimeter() {
+        return 1.0;
     }
 }
