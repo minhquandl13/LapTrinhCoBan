@@ -23,11 +23,26 @@ public class CartPointer {
 
         return Math.sqrt(diffX * diffX + diffY * diffY);
     }
-
+    /**
+     * Get minute for using in another class
+     * Example: <br/>
+     * CartPointer cartPointer1 = new CartPointer(4, 3); <br/>
+     *
+     * @return x
+     * @see int
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * Get minute for using in another class
+     * Example: <br/>
+     * cartPointer1 = new CartPointer(4, 3); <br/>
+     *
+     * @return y
+     * @see int
+     */
     public int getY() {
         return y;
     }

@@ -1,6 +1,6 @@
 package Exercise4_4;
 
-public abstract class Shape implements IShape {
+public abstract class AShape implements IShape {
     public CartPointer cartPointerLocation;
 
     public double area() {

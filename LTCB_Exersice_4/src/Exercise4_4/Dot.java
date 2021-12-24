@@ -1,6 +1,10 @@
 package Exercise4_4;
 
-public class Dot extends Shape {
+public class Dot extends AShape {
+
+    public Dot(CartPointer cartPointerLocation) {
+        this.cartPointerLocation = cartPointerLocation;
+    }
 
     @Override
     public double area() {

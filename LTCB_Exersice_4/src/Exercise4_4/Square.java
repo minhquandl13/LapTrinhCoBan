@@ -1,13 +1,21 @@
 package Exercise4_4;
 
-public class Square extends Shape{
+public class Square extends AShape {
     public int size;
 
     public Square(CartPointer cartPointerLocation, int size) {
-        super();
+        this.cartPointerLocation = cartPointerLocation;
         this.size = size;
     }
 
+    /**
+     * Compute area of shape
+     * Example: <br/>
+     * IShape square; = new Square(cartPointer2, 30); <br/>
+     * square.area()
+     *
+     * @return area
+     */
     @Override
     public double area() {
         return this.size * this.size;
@@ -35,7 +43,7 @@ public class Square extends Shape{
 
     @Override
     public Rectangle boundingBox1() {
-        return new Rectangle(this.cartPointerLocation, 0 ,0);
+        return new Rectangle(this.cartPointerLocation, this.size, this.size);
     }
 
     @Override

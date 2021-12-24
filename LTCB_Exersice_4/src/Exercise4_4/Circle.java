@@ -1,9 +1,10 @@
 package Exercise4_4;
 
-public class Circle extends Shape {
+public class Circle extends AShape {
     public int radius;
 
-    public Circle(int radius) {
+    public Circle(CartPointer cartPointerLocation, int radius) {
+        this.cartPointerLocation = cartPointerLocation;
         this.radius = radius;
     }
 
@@ -30,7 +31,8 @@ public class Circle extends Shape {
 
     @Override
     public Rectangle boundingBox1() {
-        return null;
+        return new Rectangle(this.cartPointerLocation.translate(
+                - this.radius, - this.radius), this.radius * 2, this.radius * 2);
     }
 
     @Override

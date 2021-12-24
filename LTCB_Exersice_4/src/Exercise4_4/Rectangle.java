@@ -1,7 +1,7 @@
 package Exercise4_4;
 
 // 4.4.1
-public class Rectangle extends Shape {
+public class Rectangle extends AShape {
     public int width;
     public int height;
 
@@ -10,6 +10,14 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+    /**
+     * Compute area of shape
+     * Example: <br/>
+     * IShape rectangle; = new Rectangle(cartPointer2, 30); <br/>
+     * square.area()
+     rectangle
+     * @return area
+     */
     @Override
     public double area() {
         return this.width * this.height;
