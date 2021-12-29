@@ -5,6 +5,14 @@ public class Image extends AGallery {
     public int width;
     public String quality;
 
+    /**
+     *
+     * @param fileName fileName
+     * @param fileSize fileSize
+     * @param height height
+     * @param width width
+     * @param quality quality
+     */
     public Image(String fileName, int fileSize, int height, int width, String quality) {
         super(fileName, fileSize);
         this.height = height;

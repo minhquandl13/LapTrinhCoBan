@@ -23,6 +23,7 @@ public class CartPointer {
 
         return Math.sqrt(diffX * diffX + diffY * diffY);
     }
+
     /**
      * Get minute for using in another class
      * Example: <br/>

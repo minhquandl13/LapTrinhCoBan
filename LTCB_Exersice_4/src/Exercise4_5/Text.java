@@ -3,6 +3,12 @@ package Exercise4_5;
 public class Text extends AGallery {
     public int numberOfLines;
 
+    /**
+     *
+     * @param fileName fileName
+     * @param fileSize fileSize
+     * @param numberOfLines numberOfLines
+     */
     public Text(String fileName, int fileSize, int numberOfLines) {
         super(fileName, fileSize);
         this.numberOfLines = numberOfLines;

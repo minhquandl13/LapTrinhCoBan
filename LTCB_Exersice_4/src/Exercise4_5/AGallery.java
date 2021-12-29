@@ -4,6 +4,11 @@ public abstract class AGallery {
     public String fileName;
     public int fileSize;
 
+    /**
+     *
+     * @param fileName fileName
+     * @param fileSize fileSize
+     */
     public AGallery(String fileName, int fileSize) {
         this.fileName = fileName;
         this.fileSize = fileSize;
