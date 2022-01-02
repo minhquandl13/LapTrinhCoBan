@@ -4,7 +4,7 @@ public class Circle extends AShape {
     public int radius;
 
     public Circle(CartPointer cartPointerLocation, int radius) {
-        this.cartPointerLocation = cartPointerLocation;
+        super(cartPointerLocation);
         this.radius = radius;
     }
 

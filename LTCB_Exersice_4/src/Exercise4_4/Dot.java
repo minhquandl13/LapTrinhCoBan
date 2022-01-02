@@ -3,7 +3,7 @@ package Exercise4_4;
 public class Dot extends AShape {
 
     public Dot(CartPointer cartPointerLocation) {
-        this.cartPointerLocation = cartPointerLocation;
+        super(cartPointerLocation);
     }
 
     @Override

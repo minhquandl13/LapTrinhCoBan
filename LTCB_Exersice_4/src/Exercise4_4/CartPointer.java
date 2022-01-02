@@ -13,6 +13,12 @@ public class CartPointer {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
+    /**
+     * translate this point to deltaX deltaY distance
+     * @param dx dx
+     * @param dy dy
+     * @return CartPointer
+     */
     public CartPointer translate(int dx, int dy) {
         return new CartPointer(this.x + dx, this.y + dy);
     }

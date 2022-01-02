@@ -1,5 +1,6 @@
 package TestEercise4_8;
 
+import Exercise4_8.ABook;
 import Exercise4_8.Hardcover;
 import Exercise4_8.Paperback;
 import Exercise4_8.Sale;
@@ -9,14 +10,14 @@ import org.junit.Before;
 import static org.junit.Assert.*;
 
 public class ABookTest {
-    private Hardcover doraemon;
-    private Hardcover conan;
+    private ABook doraemon;
+    private ABook conan;
 
-    private Paperback dragonBall;
-    private Paperback doremon;
+    private ABook dragonBall;
+    private ABook doremon;
 
-    private Sale yaiba;
-    private Sale yugioh;
+    private ABook yaiba;
+    private ABook yugioh;
 
     @Before
     public void setUpCase() {
@@ -31,7 +32,7 @@ public class ABookTest {
     }
 
     @Test
-    public void test_Hardcover() {
+    public void test_ABook() {
         assertNotNull(doraemon);
         assertNotNull(conan);
 

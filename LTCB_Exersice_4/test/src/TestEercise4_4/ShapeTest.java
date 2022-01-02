@@ -13,7 +13,6 @@ public class ShapeTest {
 
     private IShape dot;
     private IShape square;
-    private IShape square1;
     private IShape circle;
     private IShape rectangle;
 
@@ -26,14 +25,20 @@ public class ShapeTest {
 
         dot = new Dot(cartPointer1);
         square = new Square(cartPointer2, 30);
-        square1 = new Square(cartPointer2, 0);
         circle = new Circle(cartPointer3, 20);
         rectangle = new Rectangle(cartPointer2, 30, 1);
 
     }
 
     @Test
-    public void test_area() {
+    public void test_Shape() {
+        assertNotNull(cartPointer1);
+        assertNotNull(cartPointer2);
+        assertNotNull(cartPointer3);
+    }
+
+    @Test
+    public void test_Area() {
         assertEquals(0.0, dot.area(), 0.01);
         assertEquals(900, square.area(), 0.01);
         assertEquals(1256.64, circle.area(), 0.01);
@@ -41,7 +46,7 @@ public class ShapeTest {
     }
 
     @Test
-    public void test_DistanceTo0() {
+    public void test_DistanceToO() {
         assertEquals(5.0, dot.distanceToO(), 0.001);
         assertEquals(5.0, square.distanceToO(), 0.001);
         assertEquals(7.07, circle.distanceToO(), 0.01);
@@ -54,7 +59,7 @@ public class ShapeTest {
         assertTrue(dot.contains(cartPointer1));
         assertFalse(square.contains(cartPointer2));
         assertFalse(circle.contains(new CartPointer(100, 200)));
-//        assertTrue(rectangle.contains(cartPointer2));
+        assertFalse(rectangle.contains(cartPointer2));
     }
 
     @Test
@@ -62,7 +67,7 @@ public class ShapeTest {
         System.out.println(dot.boundingBox());
         System.out.println(square.boundingBox());
         System.out.println(circle.boundingBox());
-
+        System.out.println(rectangle.boundingBox());
 //        assertEquals(square1 ,dot.boundingBox());
     }
 

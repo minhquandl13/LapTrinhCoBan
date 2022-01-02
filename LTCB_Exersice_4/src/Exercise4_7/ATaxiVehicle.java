@@ -17,25 +17,26 @@ public abstract class ATaxiVehicle {
     }
 
     /**
-     * computes the fare for a vehicle, based on the number of miles traveled, and using the following
+     * Computes the fare for a vehicle, based on the number of miles traveled, and using the following
      * formulas for different vehicles
+     * <p>
      * Example: <br/>
      * ATaxiVehicle van = new Van(123, 2, 5, true); <br/>
-     *
+     * van.fare(2.0) --> fare of van = 12.0
      * @param numberOfMiles numberOfMiles
+     * @return true when fare < amount or false when fare >= amount
      * @see double
      */
     public abstract double fare(double numberOfMiles);
 
     /**
-     * determines whether the fare for a given number of miles is lower than some amount
+     * Determines whether the fare for a given number of miles is lower than some amount
      * Example: <br/>
-     * ClockTime clockTime1 = new ClockTime(3, 31); <br/>
-     *
+     * ATaxiVehicle van = new Van(123, 2, 5, true); <br/>
+     * van.lowerPrice(2.0, 3.0)  --> False
      * @param numberOfMiles numberOfMiles
-     * @return true when fare < amount
-     * Or
-     * @return false when fare >= amount
+     * @param amount        amount
+     * @return true or false
      * @see boolean
      */
     public boolean lowerPrice(double numberOfMiles, double amount) {
@@ -43,14 +44,17 @@ public abstract class ATaxiVehicle {
     }
 
     /**
-     * determines whether the fare in one vehicle is lower than the fare in another vehicle for the same number of miles
+     * Determines whether the fare in one vehicle is lower than the fare in another vehicle
+     * for the same number of miles
+     * <p>
      * Example: <br/>
-     * ClockTime clockTime1 = new ClockTime(3, 31); <br/>
+     * ATaxiVehicle van = new Van(123, 2, 5, true); <br/>
+     * ATaxiVehicle van1 = new Van(1223, 3, 5, false); <br/>
+     * van.cheaperThan(2.0, van1) --> True
      *
-     * @param numberOfMiles numberOfMiles
-     * @return true when fare < other fare
-     * Or
-     * @return false when fare >= other fare
+     * @param numberOfMiles    numberOfMiles
+     * @param otherTaxiVehicle otherTaxiVehicle
+     * @return true or false
      * @see boolean
      */
     public boolean cheaperThan(double numberOfMiles, ATaxiVehicle otherTaxiVehicle) {

@@ -3,23 +3,19 @@ package Exercise4_4;
 public abstract class AShape implements IShape {
     public CartPointer cartPointerLocation;
 
-    public double area() {
-        return 0;
+    public AShape(CartPointer cartPointerLocation) {
+        this.cartPointerLocation = cartPointerLocation;
     }
 
-    public boolean contains(CartPointer point) {
-        return false;
-    }
+    public abstract double area();
 
-    public double distanceToO() {
-        return 0;
-    }
+    public abstract boolean contains(CartPointer point);
+
+    public abstract double distanceToO();
 
     public abstract Square boundingBox();
 
     public abstract Rectangle boundingBox1();
 
-    public double perimeter() {
-        return 0;
-    }
+    public abstract double perimeter();
 }

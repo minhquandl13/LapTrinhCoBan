@@ -4,18 +4,10 @@ public class Square extends AShape {
     public int size;
 
     public Square(CartPointer cartPointerLocation, int size) {
-        this.cartPointerLocation = cartPointerLocation;
+        super(cartPointerLocation);
         this.size = size;
     }
 
-    /**
-     * Compute area of shape
-     * Example: <br/>
-     * IShape square; = new Square(cartPointer2, 30); <br/>
-     * square.area()
-     *
-     * @return area
-     */
     @Override
     public double area() {
         return this.size * this.size;

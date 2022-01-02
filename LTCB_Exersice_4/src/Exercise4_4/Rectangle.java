@@ -6,18 +6,11 @@ public class Rectangle extends AShape {
     public int height;
 
     public Rectangle(CartPointer cartPointerLocation, int width, int height) {
+        super(cartPointerLocation);
         this.width = width;
         this.height = height;
     }
 
-    /**
-     * Compute area of shape
-     * Example: <br/>
-     * IShape rectangle; = new Rectangle(cartPointer2, 30); <br/>
-     * square.area()
-     rectangle
-     * @return area
-     */
     @Override
     public double area() {
         return this.width * this.height;
@@ -34,12 +27,12 @@ public class Rectangle extends AShape {
 
     @Override
     public double distanceToO() {
-        return super.distanceToO();
+        return 0;
     }
 
     @Override
     public Square boundingBox() {
-        return null;
+        return new Square(cartPointerLocation, this.height);
     }
 
     @Override
