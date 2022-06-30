@@ -12,9 +12,9 @@ public class BankAccountsTest {
 
     @Test
     public void test_BankAccounts() {
-        BankAccounts earl_gray = new CheckingAccount("Earl Gray", 1782, 1_250, 500);
-        BankAccounts annie_proulx = new SavingsAccount("Annie Proulx", 2992, 800, 3.5);
-        BankAccounts ima_flatt = new CertificateOfDeposit("Ima Flatt", 4104, 10_123,
+        BankAccounts earl_gray = new CheckingAccount("Earl Gray", 1_782, 1_250, 500);
+        BankAccounts annie_proulx = new SavingsAccount("Annie Proulx", 2_992, 800, 3.5);
+        BankAccounts ima_flatt = new CertificateOfDeposit("Ima Flatt", 4_104, 10_123,
                                                             LocalDate.of(2005, Month.JUNE, 1), 4);
 
 
